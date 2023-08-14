@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+  }
+
+  h2{
+    color: aquamarine;
+    text-align: center;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #322e46;
+  }
+  
+  /* Style the header */
+  header {
+    background-image: url(YoasobiSejarah.jpg);
+    
+    padding: 125px;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(0, 255, 251);
+  }
+  /* Top Horizontal Navigation Bar */
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #5021A0;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(0, 84, 153);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  } 
+  
+  
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #bio{
+    margin-left: 20px;
+
+  }
+  
+
+  article {
+    
+    font-weight: bold;
+    font-size: x-large;
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: #e5cdff;
+    height: auto; /* only for demonstration, should be removed */
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+   /* RESPONSIVE  */
+
+/* Tampilan untuk tablet */
+@media (max-width: 768px) {
+  header {
+    padding: 60px;
+    font-size: 60px;
+  }
+  
+  /* Ubah lebar menu dan artikel */
+  nav, article {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Ubah font-size pada navigasi */
+  .topnav a {
+    font-size: 14px;
+  }
+}
+
+/* Tampilan untuk mobile phone */
+@media (max-width: 480px) {
+  header {
+    padding: 30px;
+    font-size: 40px;
+  }
+  
+  /* Ubah lebar menu dan artikel */
+  nav, article {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Ubah font-size pada navigasi */
+  .topnav a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  /* Tampilkan ikon untuk membuka menu pada tampilan mobile */
+  .topnav .icon {
+    float: right;
+    display: block;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  
+  /* Sembunyikan navigasi saat dalam mode mobile */
+  .topnav.responsive {
+    position: relative;
+  }
+  
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
